@@ -125,10 +125,10 @@ if (chatForm) {
 
         try {
             // Updated to call local backend
-            const response = await fetch('https://portfolio-backend.onrender.com/chat', {
+            const response = await fetch('https://portfolio-website-1flm.onrender.com/chat', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message })
+             headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
             });
 
             if (!response.ok) {
